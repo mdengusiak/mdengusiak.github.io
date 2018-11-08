@@ -1,3 +1,4 @@
+<!-- Comments -->
 <!DOCTYPE html>
 <html>
 	<head>
@@ -6,7 +7,7 @@
 		<style> 
 			<!-- .url {cursor: url(myBall.cur),auto;} -->
 			@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Permanent+Marker|Roboto+Mono|Shadows+Into+Light');
-			body {background-color: #e9e9e9; color: black; font-family: monospace;}
+			body {background-color: #e9e9e9; color: black; font-family: monospace; font-size: 1.0em}
 			a:hover {background-color: yellow; color: red;}
 			p::selection {background: #87CEFA; color: white;}
 }
@@ -20,7 +21,11 @@
 		border:1px #87CEFA;
 		width:200px;
 		box-shadow: 10px 10px #888888;
-		padding:25px;"> 
+		padding:25px;
+		transform: rotate(10deg);
+		-webkit-transform: rotate(10deg);
+		<!--  transform: scale(1.5,1.5); -->
+		"> 
 		Hello World! <!-- how to add space so we move to right? -->
 		</h1>
 
@@ -34,7 +39,7 @@
 				I just finished HTML course at 
 
 				<a style="cursor: url" href = "https://www.sololearn.com/Course/HTML/" target="_blank">
-					SoloLearn 
+					SoloLearn
 				</a>
 
 				and doing right now CSS course.</br>
@@ -43,7 +48,8 @@
 
 			</p> <!-- create paragraphs -->
 		<!--img style=" background-color: LightBlue; float: left;" src = "https://assets-cdn.github.com/images/icons/emoji/unicode/1f46a.png" alt="" /--> <!-- add image -->
-		<img  src = "https://assets-cdn.github.com/images/icons/emoji/unicode/1f46a.png" height="128px" width="128px" /> 
+		<img style ="filter: drop-shadow(9px 9px 2px grey);"
+		src = "https://assets-cdn.github.com/images/icons/emoji/unicode/1f46a.png" height="128px" width="128px" /> 
 		<h4> This is my family </h4> 
 		<ol> <!-- create order list -->
 			<li> Here am I </li> <!-- create list items -->
@@ -56,7 +62,9 @@
 			</a>
 		</p>
 		<p> Therefore I would like to thank my amazing   <!-- create paragraphs -->
-			<a href = "https://www.ladybug.tools/about.html#team" target="_blank"> Team </a>
+			<a href = "https://www.ladybug.tools/about.html#team" target="_blank"> 
+				Team 
+			</a>
 			who are currently working on <strong>Spider</strong> project
 		</p>
 		<table border = "0" style="border-collapse: separate; border-spacing: 10px 5px; "> <!-- create table -->
