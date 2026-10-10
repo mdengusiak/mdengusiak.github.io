@@ -1,6 +1,6 @@
 @font-face {
   font-family:Manrope;
-  src:url('manrope-0.ttf') format('truetype');
+  src:url('manrope-0.woff2') format('woff2');
   font-weight:400;
   font-style:normal;
   font-display:swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family:Manrope;
-  src:url('manrope-2.ttf') format('truetype');
+  src:url('manrope-2.woff2') format('woff2');
   font-weight:600;
   font-style:normal;
   font-display:swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family:Manrope;
-  src:url('manrope-4.ttf') format('truetype');
+  src:url('manrope-4.woff2') format('woff2');
   font-weight:800;
   font-style:normal;
   font-display:swap;
@@ -2099,3 +2099,12 @@ a:focus-visible,button:focus-visible,video:focus-visible,[tabindex]:focus-visibl
     transform:none;
   }
 }
+
+/* Retired biography URLs remain accessible without retaining obsolete copy. */
+.retired-page {min-height:100vh;display:grid;place-items:center;background:var(--paper);}
+.retired-content {max-width:680px;padding:64px 28px;}
+.retired-content h1 {font-size:clamp(38px,7vw,64px);line-height:1.1;letter-spacing:-.045em;margin:24px 0;}
+.retired-content p {line-height:1.7;margin:0 0 28px;}
+.retired-content .wordmark {color:var(--ink);}
+.retired-content .button {background:var(--lime);color:var(--ink);}
+.flagship-facts span {font-size:11px;color:var(--dark-muted);}

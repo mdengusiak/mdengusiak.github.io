@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Michal Dengusiak — Technical Product &amp; Computational Engineering Lead</title>
+  <desc id="description">Portfolio sharing graphic with navy background, lime typography accents and a conceptual analytical model diagram.</desc>
+  <rect width="1200" height="630" fill="#10191d"/>
+  <circle cx="1090" cy="230" r="340" fill="none" stroke="#b9c4c5" stroke-opacity=".1" stroke-width="2"/>
+  <circle cx="1090" cy="230" r="400" fill="none" stroke="#b9c4c5" stroke-opacity=".08" stroke-width="2"/>
+  <path d="M66 95h44" stroke="#def16c" stroke-width="4"/>
+  <g font-family="Arial, sans-serif">
+    <text x="128" y="101" font-size="17" font-weight="700" letter-spacing="2" fill="#b9c4c5">COMPUTATIONAL ENGINEERING</text>
+    <g fill="#f4f3ed" font-size="86" font-weight="700" letter-spacing="-4">
+      <text x="66" y="222">Michal</text>
+      <text x="66" y="315">Dengusiak<tspan fill="#def16c">.</tspan></text>
+    </g>
+    <g fill="#def16c" font-size="29" font-weight="700" letter-spacing="-.5">
+      <text x="70" y="380">Technical Product &amp;</text>
+      <text x="70" y="420">Computational Engineering Lead</text>
+    </g>
+    <text x="70" y="513" fill="#b9c4c5" font-size="22">Building performance · Simulation · Open engineering</text>
+    <text x="70" y="570" fill="#f4f3ed" font-size="20" font-weight="700">mdengusiak.github.io</text>
+  </g>
+  <g transform="translate(798 173)" stroke="#77b9b0" stroke-width="2" stroke-linejoin="round">
+    <path d="M0 128 158 48 324 128 166 212Z" fill="#176b68" fill-opacity=".3"/>
+    <path d="M0 128v120l166 84 158-84V128M166 212v120" fill="none"/>
+    <path d="M0 188 166 272 324 188M0 218 166 302 324 218M0 158 166 242 324 158" fill="none" stroke-opacity=".45"/>
+    <path d="M40 108 206 192M80 88l166 84M120 68l166 84M40 148 198 68M82 170l158-80M124 192l158-80" fill="none" stroke-opacity=".45"/>
+    <g fill="#def16c" stroke="none"><circle cx="0" cy="128" r="5"/><circle cx="158" cy="48" r="5"/><circle cx="324" cy="128" r="5"/><circle cx="166" cy="212" r="5"/><circle cx="166" cy="332" r="5"/></g>
+  </g>
+  <path d="M798 549h324" stroke="#536166" stroke-width="1"/>
+  <text x="798" y="572" font-family="Arial, sans-serif" fill="#b9c4c5" font-size="13" letter-spacing="1.5">MODELS · METHODS · WORKING TOOLS</text>
+</svg>
