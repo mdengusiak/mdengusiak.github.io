@@ -1,288 +1,233 @@
-<!-- Comments -->
-<!DOCTYPE html>
-<html>
-<title>Michal Dengusiak</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-    height: 100%;
-    color: #777;
-    line-height: 1.8;
-}
-
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-    background-image: url('/WebContent/AutumnBackground.jpeg');
-    min-height: 100%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-    background-image: url("/WebContent/porto.JPG");
-    min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-    background-image: url("/WebContent/AutumnBackground.jpeg");
-    min-height: 400px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
-        min-height: 400px;
-    }
-}
-</style>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Michal Dengusiak — technical product and computational engineering lead. Selected work in SAM, building performance, BIM-to-BEM, simulation and open engineering.">
+  <meta name="theme-color" content="#10191d">
+  <meta property="og:title" content="Michal Dengusiak | Technical Product &amp; Computational Engineering">
+  <meta property="og:description" content="Engineering methods, analytical models and tools for better building performance. Explore my projects, research and open-source contributions.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mdengusiak.github.io/">
+  <meta property="og:image" content="https://mdengusiak.github.io/WebContent/BiLT.JPG">
+  <title>Michal Dengusiak | Technical Product &amp; Computational Engineering</title>
+  <link rel="canonical" href="https://mdengusiak.github.io/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2310191d'/%3E%3Ctext x='4' y='22' font-family='Arial,sans-serif' font-weight='800' font-size='15' fill='%23f4f3ed'%3EMD%3C/text%3E%3Ccircle cx='27' cy='21' r='2.5' fill='%23def16c'/%3E%3C/svg%3E">
+  <link rel="preload" href="assets/manrope-4.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/site.js" defer></script>
+</head>
 <body>
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
-    </a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-  </div>
-</div>
-
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Hello <span class="w3-hide-small"> World!</span>
-  </div>
-</div>
-
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>I love computational workflows and shaping engineering.</em></p>
-  <p>Michal Dengusiak achieved his Master’s degree in Environmental Engineering at Poznan University of Technology in Poland in 2006. He started his career with Arup, where he achieved his Chartership status with CIBSE and formed a strong grounding in the Built Environment. Currently working for BuroHappold Engineering in Berlin and Bath as a Senior Computational Engineer, Michal is responsible for leading the discipline development within Building Environments under BHoM, and helping with seamless integration for the whole of MEP and Building Physics workflows. He is passionate about creative new approaches to modelling and thermal simulation, adopting parametric design techniques and BIM workflows concentrating on calculations and thereby improving project efficiency. Outside of work, you might find Michal beekeeping, playing badminton, or programming. He was awarded with two CIBSE Digital Engineering awards for innovation: his work on SAM (Single Analysis Model) and recognized as best Digital Engineer of the year.</p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>Michal Dengusiak</b></p><br>
-      <img src="/WebContent/BiLT.JPG" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="#home" aria-label="Michal Dengusiak, home"><span class="monogram" aria-hidden="true">MD<span></span></span> Michal Dengusiak</a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#portfolio">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
     </div>
+  </header>
 
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Welcome to my website. Please find out more about me and if you have interesting ideas, cooperation task please do not be afraid to reach me and share</p>
-    </div>
-  </div>
-  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-  <p class="w3-wide"><i class="fa fa-cogs"></i>Integrated Workflows</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">95%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Computational Design</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-refresh"></i>Simulation</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:86%">86%</div>
-  </div>
-</div>
-
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">12+</span><br>
-    Years of Experience
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">20+</span><br>
-    Projects Done
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">39+</span><br>
-    Happy Clients
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">99+</span><br>
-    Ideas
-  </div>
-</div>
-
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
-  </div>
-</div>
-
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest idea and involvments.<br> Click on the images to make them bigger</em></p><br>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <a href="https://www.ladybug.tools/about.html#team" title="Ladybug-Tools&#10;Click below&#10;for Video" target="_blank"><img src="/WebContent/ladybug_analysis_tools.png" style="width:70%" class="w3-hover-opacity" alt="Ladybug-Tools"></a>
-    </div>
-
-    <div class="w3-col m3">
-	  <br>	
-      <img src="/WebContent/SAM.png" style="width:120px" title="SAM&#10;Click below&#10;for Video" onclick="onClick(this)" class="w3-hover-opacity" alt="Single Analysis Model">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/WebContent/TASmanianDevil.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Tasmanian Devil">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="/WebContent/TASmanianDevil.png" title="TASmanianDevil&#10;Click below&#10;for Video" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Tasmanian Devil">
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="/WebContent/gbXMLTextve01.gif" title="Click to see&#10;full screen" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="gbXML viewer">
-    </div>
-
-    <div class="w3-col m3">
-	  <img src="/WebContent/complexRoofb.gif" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Revit Complex Roof">
-    </div>
-
-    <div class="w3-col m3">
-	  <iframe width="217" height="114" src="https://www.youtube.com/embed/2QHrbuKIkdY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-
-    <div class="w3-col m3">
-      <a href="https://www.youtube.com/watch?v=Y6bUv8GEwXU" title="W3.CSS" target="_blank"><img src="/WebContent/TASmanianDevilLogo.png" style="width:130%" class="w3-hover-opacity" alt="TASmanianDevil Introduction"></a>
-    </div>
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
-  </div>
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <img src="/WebContent/map.png" class="w3-image w3-round" style="width:100%">
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Kolobrzeg, PL // Berlin, DE<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +49 (0)693 022 978// +49 (0)176 367 80030<br>
-        <a href="mailto:dengusiak@gmail.com"  style="text-decoration: none;" ><i class="fa fa-envelope fa-fw w3-hover-text-blue w3-xlarge w3-margin-right"></i> Email: dengusiak@gmail.com<br>
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-scenes">
+        <div class="hero-scene model-scene" id="scene-models" role="tabpanel" aria-labelledby="tab-models">
+          <img class="scene-image" src="assets/engineering-hero-1672.webp" srcset="assets/engineering-hero-960.webp 960w, assets/engineering-hero-1672.webp 1672w" sizes="(max-width: 780px) 100vw, 78vw" width="1672" height="941" alt="Concept artwork of an exploded building model with translucent spaces and coloured analytical layers" fetchpriority="high">
+          <div class="scene-caption"><span>01 / Models</span><p>From geometry<br>to engineering insight.</p><a href="#sam-title">Explore SAM ↗</a><small>Generated concept artwork · not a real project or simulation result</small></div>
+        </div>
+        <div class="hero-scene analysis-scene" id="scene-analysis" role="tabpanel" aria-labelledby="tab-analysis" hidden>
+          <div class="analysis-art"><img src="WebContent/SAM_SimToCalc.png" width="1356" height="523" alt="Earlier illustration connecting a building model to psychrometric analysis" loading="lazy"></div>
+          <div class="scene-caption"><span>02 / Analysis</span><p>Make complex<br>processes visible.</p><a href="#mollier-title">Explore SAM_Mollier ↗</a><small>Earlier workflow illustration</small></div>
+        </div>
+        <div class="hero-scene ideas-scene" id="scene-ideas" role="tabpanel" aria-labelledby="tab-ideas" hidden>
+          <img class="scene-image" src="WebContent/BiLT.JPG" width="640" height="424" alt="Michal Dengusiak presenting engineering workflows at BILT Europe 2018" loading="lazy">
+          <div class="scene-caption"><span>03 / Ideas</span><p>Engineering knowledge.<br>Shared in the open.</p><a href="#research">Explore research ↗</a><small>BILT Europe · 2018</small></div>
+        </div>
       </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note.</p>
-      <!--<form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="small-rule"></span> Computational engineering · Building performance</p>
+          <h1 id="hero-title">Michal<br>Dengusiak<span class="teal">.</span></h1>
+          <p class="hero-role">Technical Product &amp;<br>Computational Engineering Lead</p>
+          <p class="hero-intro">I turn difficult engineering problems into reusable workflows, analytical models and tools that engineers can put to work.</p>
+          <div class="hero-actions">
+            <a class="button" href="#portfolio">Explore my work <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="https://www.linkedin.com/in/michal-dengusiak">LinkedIn <span aria-hidden="true">↗</span></a>
           </div>
         </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </form>-->
-    </div>
-  </div>
-</div>
+        <div class="hero-rail">
+          <div class="scene-tabs" role="tablist" aria-label="Engineering gallery" hidden>
+            <button id="tab-models" role="tab" aria-selected="true" aria-controls="scene-models" tabindex="0"><span>01</span> Models <span class="tab-arrow" aria-hidden="true">↗</span></button>
+            <button id="tab-analysis" role="tab" aria-selected="false" aria-controls="scene-analysis" tabindex="-1"><span>02</span> Analysis <span class="tab-arrow" aria-hidden="true">↗</span></button>
+            <button id="tab-ideas" role="tab" aria-selected="false" aria-controls="scene-ideas" tabindex="-1"><span>03</span> Ideas <span class="tab-arrow" aria-hidden="true">↗</span></button>
+          </div>
+          <p class="hero-location">Based in Poland<br><span>Open engineering. International collaboration.</span></p>
+        </div>
+      </div>
+    </section>
+    <div class="discipline-strip" aria-label="Engineering disciplines"><div class="container"><span>Building performance</span><i aria-hidden="true">✳</i><span>Analytical models</span><i aria-hidden="true">✳</i><span>Simulation &amp; HVAC</span><i aria-hidden="true">✳</i><span>Open engineering</span></div></div>
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <a href="index.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-right w3-margin-right"></i>Next Page</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <a  href="https://www.linkedin.com/in/michal-dengusiak-a8028020/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity w3-hover-text-blue"></i></a> 
-  </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="section-heading">
+          <p class="eyebrow">01 / About</p>
+          <h2 id="about-title">Engineering expertise,<br>connected to product.</h2>
+        </div>
+        <figure class="about-portrait"><img src="assets/portrait-michal.jpg" width="437" height="512" loading="lazy" alt="Portrait of Michal Dengusiak"><figcaption>Michal Dengusiak <span>Engineer. Builder. Collaborator.</span></figcaption></figure>
+        <div class="about-copy">
+          <p>I’m a Chartered Engineer with around 20 years of experience across building performance, MEP, simulation and computational engineering. I connect engineering specialists with software developers: defining requirements, shaping workflows, testing engineering logic and helping teams adopt new tools.</p>
+          <p>I co-founded <strong>M+J Projekt</strong> with Jakub Ziolkowski in December 2019. Through M+J, I delivered SAM development and computational engineering services to <strong>Hoare Lea</strong> from January 2020 to October 2026, leading engineering content and technical product direction. My earlier work at Arup and Buro Happold established the building-performance and integrated-workflow foundations behind these projects.</p>
+          <p>I also contribute through AI-assisted prototyping, implementation and debugging, with responsibility for workflow design, engineering testing and validation.</p>
+        </div>
+        <aside class="credentials" aria-label="Qualifications and recognition">
+          <div><p class="detail-label">Professional credentials</p><p>CEng MCIBSE<br>EUR ING (FEANI)</p></div>
+          <div><p class="detail-label">Education</p><p>MSc Environmental Engineering<br><span>Poznan University of Technology · 2004</span></p></div>
+          <div><p class="detail-label">Recognition</p><p>Best Digital Engineer · 2018<br><span>CIBSE / Society of Digital Engineering</span></p></div>
+        </aside>
+      </div>
+    </section>
 
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
+    <section class="projects-section container" id="portfolio" aria-labelledby="projects-title">
+      <div class="section-top">
+        <div><p class="eyebrow">02 / Selected projects</p><h2 id="projects-title">Models, methods &amp; working tools.</h2></div>
+        <p>Current platforms and earlier work.<br>The problem, my contribution, and what it enables.</p>
+      </div>
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
+      <article class="flagship" aria-labelledby="sam-title">
+        <div class="flagship-copy">
+          <p class="project-label"><span class="status-dot" aria-hidden="true"></span> Flagship platform · Open source</p>
+          <h3 id="sam-title">SAM<span>Sustainable Analytical Model</span></h3>
+          <p>Building geometry, engineering assumptions and simulation often live in separate tools. SAM connects them through a reusable analytical building model, supporting building physics, dynamic thermal simulation, compliance-oriented workflows and HVAC analysis.</p>
+          <p><strong>My contribution:</strong> engineering content and technical product direction, from requirements and data logic to user journeys, acceptance criteria and validation. I work with developers on implementation and debugging, and support engineers through pilots, training and workflow refinement.</p>
+          <p class="flagship-outcome">The result: a connected platform for model generation, attribution, simulation and HVAC scenario comparison, with shared data and repeatable validation.</p>
+          <ul class="flagship-facts" aria-label="SAM at a glance"><li><strong>36</strong> active repositories</li><li><strong>650+</strong> Grasshopper components</li></ul>
+          <div class="project-links"><a href="https://sambim.xyz/">Explore SAM <span aria-hidden="true">↗</span></a><a href="https://github.com/SAM-BIM/SAM">Source &amp; documentation <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="analytical-visual">
+          <p class="visual-label">One analytical model. Connected workflows.</p>
+          <svg viewBox="0 0 460 290" role="img" aria-labelledby="model-title model-desc">
+            <title id="model-title">An analytical building model</title>
+            <desc id="model-desc">A conceptual diagram of connected building panels and spaces, the shared representation used for engineering analysis.</desc>
+            <defs><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M 28 0 H 0 V 28" fill="none" stroke="#294c60" stroke-width="0.6"/></pattern></defs>
+            <rect width="460" height="290" fill="url(#grid)"/>
+            <g stroke="#82d9cf" stroke-width="1.6" stroke-linejoin="round">
+              <path d="M83 182 238 258 391 180 237 106Z" fill="#173e4c"/>
+              <path d="M83 105 238 181 238 258 83 182Z" fill="#245163" fill-opacity="0.65"/>
+              <path d="M238 181 391 103 391 180 238 258Z" fill="#1c6470" fill-opacity="0.5"/>
+              <path d="M83 105 237 28 391 103 238 181Z" fill="#326477" fill-opacity="0.45"/>
+              <path d="M135 131 135 207 M186 156 186 232 M289 155 289 232 M340 129 340 206 M83 143 238 219 391 142 M135 79 289 155 M186 54 340 129 M135 131 289 54 M186 156 340 79" fill="none"/>
+              <path d="M237 28 V106 M83 182 237 106 391 180" fill="none" stroke-dasharray="5 7" opacity="0.6"/>
+            </g>
+            <g fill="#bceee3"><circle cx="83" cy="105" r="4"/><circle cx="237" cy="28" r="4"/><circle cx="391" cy="103" r="4"/><circle cx="238" cy="181" r="4"/><circle cx="238" cy="258" r="4"/></g>
+          </svg>
+          <ol class="workflow" aria-label="SAM engineering workflow">
+            <li><span>01</span>Geometry</li><li><span>02</span>Analytical model</li><li><span>03</span>Validation</li><li><span>04</span>Simulation &amp; HVAC</li>
+          </ol>
+          <p class="visual-footnote">Panels · Spaces · Systems · Engineering data</p>
+        </div>
+      </article>
 
+      <div class="project-grid">
+        <article class="project-card" aria-labelledby="mollier-title">
+          <figure class="project-visual mollier-visual"><img src="WebContent/SAM_SimToCalc.png" width="1356" height="523" loading="lazy" alt="Earlier analytical workflow illustration showing a building model and psychrometric chart"><figcaption>From model to air process · earlier workflow illustration</figcaption></figure>
+          <div class="card-top"><span class="project-index">02</span><span class="tag">Psychrometrics &amp; HVAC</span></div>
+          <h3 id="mollier-title">SAM_Mollier</h3>
+          <p>Air-conditioning processes need a clear connection between moist-air properties, charts and HVAC loads. SAM_Mollier brings psychrometric calculations and air-process exploration into the SAM ecosystem.</p>
+          <p><strong>My contribution:</strong> engineering methods and workflow definition within SAM, alongside co-authored research on the open-source tool and its use in HVAC analysis.</p>
+          <p class="card-outcome">Supports chart-based exploration of air processes and concept-stage HVAC design.</p>
+          <div class="project-links"><a href="https://github.com/SAM-BIM/SAM_Mollier">Explore the module <span aria-hidden="true">↗</span></a><a href="https://doi.org/10.1007/978-3-032-14019-7_51">Read the paper <span aria-hidden="true">↗</span></a></div>
+        </article>
+
+        <article class="project-card" aria-labelledby="bim-title">
+          <div class="project-visual exchange-visual" role="img" aria-label="Concept diagram: geometry moves through an analytical model to building energy simulation">
+            <div class="exchange-node"><span class="wire-cube" aria-hidden="true">◇</span><span>Geometry</span><small>Revit / Rhino</small></div><span class="exchange-arrow" aria-hidden="true">→</span><div class="exchange-node central-node"><span aria-hidden="true">✳</span><span>Analytical model</span><small>SAM</small></div><span class="exchange-arrow" aria-hidden="true">→</span><div class="exchange-node"><span class="energy-symbol" aria-hidden="true">≋</span><span>Simulation</span><small>BEM</small></div>
+            <span class="visual-caption">Connected data. Traceable relationships.</span>
+          </div>
+          <div class="card-top"><span class="project-index">03</span><span class="tag">Interoperability</span></div>
+          <h3 id="bim-title">BIM-to-BEM workflows</h3>
+          <p>A design model needs usable geometry, engineering attributes and reliable relationships before it can become a building energy model.</p>
+          <p><strong>My contribution:</strong> defining workflows across Revit, Rhino/Grasshopper, IFC, gbXML and simulation tools, with an emphasis on reusable analytical models, traceable identity and validation.</p>
+          <p class="card-outcome">Connects BIM inputs to simulation-ready models. Tas is the primary simulation pathway; native OpenStudio conversion is in development.</p>
+          <p class="development-note"><span aria-hidden="true">◌</span> Digital twins are an area of interest, not a current SAM capability.</p>
+          <div class="project-links"><a href="https://sambim.xyz/#platform">Explore the integrations <span aria-hidden="true">↗</span></a></div>
+        </article>
+
+        <article id="earlier-work" class="project-card history-card" aria-labelledby="bhom-title">
+          <figure class="project-visual award-visual">
+            <a href="assets/digital-awards-2018.jpg" aria-label="View the 2018 Digital Awards photograph at full size"><img src="assets/digital-awards-2018.jpg" width="1215" height="911" loading="lazy" alt="Michal Dengusiak holding his Best Digital Engineer award and the Buro Happold Single Analysis Model Best Innovation award in 2018"></a>
+            <figcaption><span class="award-year">2018 · CIBSE Digital Awards</span><strong>Best Digital Engineer</strong><span>Michal Dengusiak</span><strong>Best Innovation</strong><span>Buro Happold<br>Single Analysis Model</span></figcaption>
+          </figure>
+          <div class="card-top"><span class="project-index">04</span><span class="tag">Earlier work · Buro Happold</span></div>
+          <div class="project-title-with-image"><img src="WebContent/SAM.png" width="120" height="120" alt="Earlier Single Analysis Model logo" loading="lazy"><h3 id="bhom-title">Single Analysis Model<br><span class="subheading">&amp; BHoM Building Environments</span></h3></div>
+          <p>Repeating the same engineering setup across design and simulation tools created opportunities for a shared computational approach.</p>
+          <p><strong>My contribution:</strong> developing the earlier Single Analysis Model approach at Buro Happold and later leading discipline-side Building Environments workflows for BHoM, translating MEP and building-physics requirements into reusable methods.</p>
+          <p class="card-outcome">A progression from project prototypes to shared engineering toolkits. Buro Happold received the Innovation award for the Single Analysis Model.</p>
+          <div class="project-links"><a href="https://github.com/BHoM/BHoM">Explore BHoM <span aria-hidden="true">↗</span></a></div>
+        </article>
+
+        <article class="project-card history-card" aria-labelledby="spider-title">
+          <div class="project-visual spider-visual" role="img" aria-label="Conceptual building wireframe representing open engineering data visualisation">
+            <svg viewBox="0 0 500 240" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M95 110 260 30 410 107 246 196Z M95 110V156L246 229 410 148V107 M246 196V229 M130 93 281 179 M165 76 314 161 M200 59 347 143 M235 42 380 125 M130 127 295 47 M165 144 330 64 M200 161 365 81 M95 133 246 212 410 129 M165 144V188 M314 161V195"/><circle cx="95" cy="110" r="6"/><circle cx="260" cy="30" r="6"/><circle cx="410" cy="107" r="6"/><circle cx="246" cy="196" r="6"/></g></svg><span class="visual-caption">Open data. Visible connections.</span>
+          </div>
+          <div class="card-top"><span class="project-index">05</span><span class="tag">Voluntary open source</span></div>
+          <div class="project-title-with-image"><img src="WebContent/ladybug_analysis_tools.png" width="120" height="120" alt="Ladybug Tools logo" loading="lazy"><h3 id="spider-title">Spider gbXML Viewer<br><span class="subheading">/ Ladybug Tools</span></h3></div>
+          <p>Engineers need accessible ways to inspect building geometry and understand the data exchanged between BIM and energy-modelling tools.</p>
+          <p><strong>My contribution:</strong> voluntary open-source collaboration on Spider gbXML Viewer and related visualisation workflows, focusing on gbXML, building geometry and BIM/BEM interoperability.</p>
+          <p class="card-outcome">Browser-based visualisation makes engineering data easier to explore and review.</p>
+          <div class="project-links"><a href="https://www.ladybug.tools/spider/">Explore Spider <span aria-hidden="true">↗</span></a><a href="https://github.com/ladybug-tools/spider">Source code <span aria-hidden="true">↗</span></a></div>
+        </article>
+      </div>
+
+      <article class="legacy-project" aria-labelledby="legacy-title">
+        <div class="legacy-copy">
+          <div class="card-top"><span class="project-index">06</span><span class="tag">Earlier tools &amp; demonstrations</span></div>
+          <h3 id="legacy-title">TasmanianDevil<br>&amp; modelling explorations</h3>
+          <p>My earlier open engineering work includes TasmanianDevil and practical Revit modelling demonstrations, exploring ways to connect visual programming, building geometry and engineering analysis.</p>
+          <p><strong>My contribution:</strong> computational workflows and demonstrations that make modelling methods tangible. These earlier explorations sit alongside the more connected analytical workflows I now develop through SAM.</p>
+          <div class="legacy-mark"><img src="WebContent/TASmanianDevilLogo.png" width="180" height="80" loading="lazy" alt="TasmanianDevil"><a class="text-link" href="WebContent/TASmanianDevil.png">View the original project graphic <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="legacy-media"><figure class="devil-art"><img src="assets/tasmaniandevil-art.webp" width="680" height="580" loading="lazy" alt="Original illustrated TasmanianDevil project graphic"><figcaption>Original TasmanianDevil artwork</figcaption></figure>
+        <figure class="demo">
+          <video controls preload="none" poster="WebContent/complexRoofa_First_Frame.png" aria-label="Earlier Revit complex roof modelling demonstration">
+            <source src="WebContent/complexRoofa.mp4" type="video/mp4">
+            <a href="WebContent/complexRoofa.mp4">Open the roof modelling video</a>.
+          </video>
+          <figcaption>Earlier demonstration · Revit complex roof modelling<br><a href="WebContent/complexRoofa.html">Open the original player <span aria-hidden="true">↗</span></a></figcaption>
+        </figure></div>
+      </article>
+
+      <div class="built-projects" aria-labelledby="buildings-title">
+        <div class="built-heading"><p class="eyebrow">Applied on projects</p><h3 id="buildings-title">Engineering methods in practice.</h3></div>
+        <div class="building-grid">
+          <article><span class="detail-label">Zalando HQ</span><p>Dynamo/VBA automation and integrated MEP calculations for project delivery.</p></article>
+          <article><span class="detail-label">European Investment Bank HQ</span><p>A BIM-based Single Analysis Model workflow connecting design and engineering analysis.</p></article>
+          <article><span class="detail-label">HARIBO · Bonn</span><p>Automated Revit schematics to support building-services workflows.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="research-section" id="research" aria-labelledby="research-title">
+      <div class="container">
+        <div class="section-top"><div><p class="eyebrow">03 / Research &amp; knowledge sharing</p><h2 id="research-title">Methods worth sharing.</h2></div><p>Selected presentations and publications<br>in building simulation and open engineering.</p></div>
+        <ol class="research-list">
+          <li><span class="research-year">2026</span><div><h3><a href="https://sambim.xyz/#research">Sustainable Analytical Model (SAM 3.0): A New Approach to Automated HVAC Simulation <span aria-hidden="true">↗</span></a></h3><p>BSA 2026 · Conference presentation; proceedings forthcoming</p></div><span class="research-type">HVAC simulation</span></li>
+          <li><span class="research-year">2025 / 26</span><div><h3><a href="https://doi.org/10.1007/978-3-032-14011-1_75">Bridging BIM and BEM: Efficient Generation of Building Energy Models Using the Sustainable Analytical Model (SAM) <span aria-hidden="true">↗</span></a></h3><p>CESBP 2025 · Springer proceedings, 2026</p></div><span class="research-type">BIM to BEM</span></li>
+          <li><span class="research-year">2025 / 26</span><div><h3><a href="https://doi.org/10.1007/978-3-032-14019-7_51">Introducing SAM_Mollier: An Open-Source Tool for Psychrometric HVAC Analysis <span aria-hidden="true">↗</span></a></h3><p>CESBP 2025 · Proceedings chapter published February 2026</p></div><span class="research-type">Psychrometrics</span></li>
+          <li><span class="research-year">2024</span><div><h3><a href="https://doi.org/10.13124/9788860462022">Sustainable Analytical Model (SAM 2.0): A New Frontier in Open-Source Building Energy Simulation <span aria-hidden="true">↗</span></a></h3><p>BSA 2024 · Bozen-Bolzano University Press proceedings, 2025</p></div><span class="research-type">Energy modelling</span></li>
+        </ol>
+        <div class="research-footer"><p>Also shared at BILT Europe: MEP workflows, open-source interoperability and watertight modelling.</p><a class="text-link" href="https://www.researchgate.net/profile/Michal-Dengusiak/research">More on ResearchGate <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid"><div><p class="eyebrow">04 / Contact</p><h2 id="contact-title">Let’s talk engineering.</h2><p>I welcome conversations about technical product leadership, building performance, computational workflows and open-source collaboration.</p><p class="contact-location">Based in Poland · Working across international engineering communities</p></div>
+      <div class="contact-links"><a href="mailto:dengusiak@gmail.com">dengusiak@gmail.com <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/michal-dengusiak">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://www.researchgate.net/profile/Michal-Dengusiak/research">ResearchGate <span aria-hidden="true">↗</span></a></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><p>© 2026 Michal Dengusiak</p><p>Computational engineering · Building performance · Open knowledge</p><a href="#home">Back to top <span aria-hidden="true">↑</span></a></div></footer>
 </body>
 </html>
-
